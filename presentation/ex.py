@@ -1,13 +1,25 @@
 # Tuple unchangeable
 thistup = ("apple", "banana", "cherry", "apple", "banana", "banana")
+# Accessing tuple
+print(thistup[0])
+# Unpacking tuple
+(green, yellow, red, *rest) = thistup
+print(green, yellow, red, rest)
 #Methods that could be used for tuple
 #Count
-print(thistup.count("banana"))
+print("Total of bananas: ", thistup.count("banana"))
 #Index
-print(thistup.index("cherry"))
+print("Total of cherry: ", thistup.index("cherry"))
 
 # List values are changeable & dupeable
 thislist = ["apple", "banana", "cherry", "apple", "banana", "banana"]
+# Accessing list items
+print(thislist[0])
+print(thislist[1:3])
+print(thislist[-1])
+# Changing a list item
+thislist[1] = "orange"
+print("After changing a list item\n", thislist)
 #Methods that could be used for list
 # Appends
 thislist.append("orange")
@@ -32,3 +44,20 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+another_thisdict = {
+  "name": "John",
+  "age": 36,
+  "city": "New York"
+}
+# Accessing dictionary items
+print(thisdict["brand"])
+print(thisdict.get("model"))
+# Using the 'keys' method
+print("This is keys\n", thisdict.keys())
+# Using the 'values' method
+print("This is values\n", thisdict.values())
+# Using 'Pop' / 'Popitem' method
+thisdict.pop("model")
+print("This is after pop\n", thisdict)
+another_thisdict.popitem()
+print("This is after popitem\n", another_thisdict)
