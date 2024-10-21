@@ -1,0 +1,7 @@
+print(5%2 == 1)
+print(9%5 == 2)
+print(15%12 == 3)
+print(12%15 == 4)
+print(6%6 == 5)
+print(0%7 == 6)
+print(7%0 == 7)
